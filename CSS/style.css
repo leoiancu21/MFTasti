@@ -1,0 +1,220 @@
+@font-face {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+
+/* Ripple effect */
+
+.ripple {
+    background-position: center;
+    transition: background 0.8s;
+}
+
+.ripple:hover {
+    background: #47a7f5 radial-gradient(circle, transparent 1%, #47a7f5 1%) center/15000%;
+}
+
+.ripple:active {
+    background-color: #6eb9f7;
+    background-size: 100%;
+    transition: background 0s;
+}
+
+
+/*Position CSS*/
+
+.img {
+    display: block;
+    max-width: 100%;
+    max-height: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: auto;
+}
+
+.luce_button {
+    width: 240px;
+    height: 200px;
+    border: none;
+    border-radius: 2px;
+    padding: 12px 18px;
+    font-size: 16px;
+    text-transform: uppercase;
+    cursor: pointer;
+    box-shadow: 0 0 4px #999;
+    outline: none;
+    background-color: #5e97f6;
+    color: #ffffff;
+    position: fixed;
+    top: 2px;
+    left: 272px;
+    border-radius: 10px;
+}
+
+.container {
+    background-color: white;
+    height: 480px;
+    width: 858px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main_bg {
+    width: 858px;
+    height: 480px;
+    background-color: white;
+}
+
+.meteo_button {
+    width: 225px;
+    height: 200px;
+    border: none;
+    border-radius: 2px;
+    padding: 12px 18px;
+    font-size: 16px;
+    text-transform: uppercase;
+    cursor: pointer;
+    box-shadow: 0 0 4px #999;
+    outline: none;
+    background-color: #5e97f6;
+    color: #ffffff;
+    position: absolute;
+    top: 2px;
+    left: 0;
+    border-radius: 10px;
+}
+
+.tapparella_button {
+    width: 208px;
+    height: 200px;
+    border: none;
+    border-radius: 2px;
+    padding: 12px 18px;
+    font-size: 16px;
+    text-transform: uppercase;
+    cursor: pointer;
+    box-shadow: 0 0 4px #999;
+    outline: none;
+    background-color: #5e97f6;
+    color: #ffffff;
+    position: fixed;
+    top: 2px;
+    left: 516px;
+    border-radius: 10px;
+}
+
+.tapparella_up {
+    position: static;
+    width: 110px;
+    height: 98px;
+    border: none;
+    border-radius: 2px;
+    padding: 12px 18px;
+    font-size: 16px;
+    text-transform: uppercase;
+    cursor: pointer;
+    box-shadow: 0 0 4px #999;
+    outline: none;
+    background-color: #5e97f6;
+    color: #ffffff;
+    position: fixed;
+    top: 2px;
+    left: 728px;
+    border-radius: 10px;
+}
+
+.tapparella_down {
+    width: 110px;
+    height: 98px;
+    border: none;
+    border-radius: 2px;
+    padding: 12px 18px;
+    font-size: 16px;
+    text-transform: uppercase;
+    cursor: pointer;
+    box-shadow: 0 0 4px #999;
+    outline: none;
+    background-color: #5e97f6;
+    color: #ffffff;
+    position: fixed;
+    top: 104px;
+    left: 728px;
+    border-radius: 10px;
+}
+
+
+/* SLIDER */
+
+.wrapper {
+    background: #5e97f6;
+    position: absolute;
+    display: inline-block;
+    width: 795px;
+    height: 71px;
+    border: none;
+    font-size: 16px;
+    text-transform: uppercase;
+    cursor: pointer;
+    box-shadow: 0 0 4px #999;
+    outline: none;
+    background-color: #5e97f6;
+    color: #5e97f6;
+    position: fixed;
+    top: 245px;
+    left: 440px;
+    transform: translate(-50%, -50%);
+    border-radius: 10px;
+}
+
+.slider-wrapper {
+    width: 80%;
+    height: 30px;
+    position: relative;
+    display: inline-block;
+    top: 50%;
+    left: 39%;
+    transform: translate(-50%, -50%);
+}
+
+input.slider[type=range] {
+    -webkit-appearance: none;
+    width: 100%;
+    height: 15%;
+}
+
+input.slider[type=range]::-webkit-slider-runnable-track {
+    width: 100%;
+    height: 4px;
+    background: #212121;
+    border: none;
+}
+
+input.slider[type=range]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    border: none;
+    width: 24px;
+    height: 24px;
+    background: #fff;
+    border-radius: 50%;
+    position: relative;
+    display: inline-block;
+    top: 5px;
+    left: 0;
+    transform: translate(0%, -50%);
+    transition: all 0.2s ease-in-out;
+}
+
+input.slider[type=range]::-webkit-slider-thumb:active {
+    background: #00bcd4;
+    border-radius: 0;
+    top: 5px;
+}
+
+input.slider[type=range]:focus {
+    outline: none;
+}
+
+input.slider[type=range]:focus::-webkit-slider-runnable-track {
+    background: #5e97f6;
+}

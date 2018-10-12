@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!--Import Bulma CSS-->
+    <link rel="stylesheet" href="./CSS/bulma.css">
+    <link rel="stylesheet" href="./CSS/bulma.css.map">
+    <link rel="stylesheet" href="./CSS/bulma.min.css">
+    <!--Import Style CSS-->
+    <link rel="stylesheet" href="./CSS/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script>
+        function sliderChange(val) {
+            // Use Ajax post to send the adjusted value to PHP or MySQL storage
+            document.getElementById('sliderStatus').innerHTML = val;
+        }
+    </script>
+
+</head>
+
+<body>
+
+
+    <div class="container">
+
+
+        <button class="meteo_button ripple"><img src="./CSS/images/meteo.png" ></button>
+        <button class="luce_button ripple"><img src="./CSS/images/Gruppo 1.png"  </button>
+        <button class="tapparella_button ripple"><img src="./CSS/images/Tapparella.png"</button>
+        <button class="tapparella_up ripple"><img src="./CSS/images/tup.png"  </button>
+        <button class="tapparella_down ripple"><img src="./CSS/images/tdown.png" alt="" </button>
+        <hr>
+        <div class="wrapper">
+            <div class="slider-wrapper">
+                <input type="range" class="slider" value="0" min="0" max="100">
+            </div>
+
+
+
+        </div>
+
+
+
+
+</body>
